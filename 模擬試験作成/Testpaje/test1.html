@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html>
  <head>
+    <link rel="stylesheet" href="Testpaje/start.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <meta charset="UTF-8">
   <title>テストページ</title>
  </head>
  <body>
+    
     <div class="alert alert-primary" role="alert">
         <header><h3>模擬試験1</h3></header>
       </div>
+      <script>
+        window.addEventListener('DOMContentLoaded', ()=>{
+          const t0=120*120*1000;
+          const t1=new Date().getTime();
+          setInterval(()=>{
+            const t2=new Date().getTime();
+            const t3=t0+t1-t2
+            const m=(parseInt(t3/120/1000)).toString().padStart(2,'0');
+            const s=(parseInt(t3/1000)%60).toString().padStart(2,'0');
+            timer.textContent=`${m}:${s}`;
+          },1000);
+        });
+        </script>
+        <style>
+            h2 {
+            border:#ec59ba 3px double; /*境界線の指定*/
+            padding:10px;
+            text-align: center;
+            float: right;
+            width: 12%;
+            }
+
+
+            .btn{
+               float: right;
+               bottom: 0;
+            }
+            body { min-height: 100vh; }
+
+            </style>
+
+        <h2 id="timer"></h2>
+     
+      <fieldset>
+        <legend>問題文がはいる</legend>
     
+        <div>
+          <input type="checkbox" >
+          <label for="scales">答えはいる</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" >
+          <label for="horns">答えはいる</label>
+        </div>
 
-   
+        <div>
+          <input type="checkbox">
+          <label for="horns">答えはいる</label>
+        </div>
+
+        <div>
+          <input type="checkbox">
+          <label for="horns">答えはいる</label>
+        </div>
+          
+        <div>
+          <input type="checkbox">
+          <label for="horns">答えはいる</label>
+        </div>
+
+    </fieldset>
+
+    <button id="btn" type="button" class="btn btn-primary btn-lg">次へ</button>
   
-
-
-
+    <script src="start.js"></script>
  </body>
- <header><button type="button" class="btn btn-primary btn-lg">次へ</button></header>
- 
 </html>
