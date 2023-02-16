@@ -11,34 +11,25 @@
  <!-- [if lt IE 9] -->
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <script src="main.js"></script>
  <!-- [endif] -->
  </head>
  <body>
-<script src="main.js"></script>
-<script src="start.js"></script>
 
- <!----- header----->
+
  <div class="alert alert-primary" role="alert">
     <header><h1>模擬試験</h1></header>
   </div>
- <!----- /header ----->
- 
- <!----- main ----->
- <article>
+  <article>
+   <div class="alert alert-primary" role="alert">
+       <h3>受ける模擬試験を選んでください</h3>
+   </div>
 
  <section>
-<input type="button" class="btn btn-light btn-lg" value="模擬試験1" onclick="mogi1()">
-<input type="button" class="btn btn-light btn-lg" value="模擬試験2" onclick="mogi2()">
-<input type="button" class="btn btn-light btn-lg" value="模擬試験3" onclick="mogi3()">
-<input type="button" class="btn btn-light btn-lg" value="模擬試験4" onclick="mogi4()">
-
-<h5><p id="btn1" class="alert alert-primary" role="alert">試験時間が表示されます</p></h5>
-<h5><p id="btn2" class="alert alert-primary" role="alert">問題数が表示されます</p></h5>
-<h5><p id="btn3" class="alert alert-primary" role="alert">試験を選んでください</p></h5>
-
-<script src="main.js"></script>
-<input id="start_btn" type="button" class="btn btn-light btn-lg" value="開始">
-
+   <a href="paje1.html"><input id="id1" type="button" class="btn btn-light btn-lg" value="模擬試験1" onclick="mogi1()"></a>
+   <a href="paje2.html"><input id="id2" type="button" class="btn btn-light btn-lg" value="模擬試験2" onclick="mogi2()"></a>
+   <a href="paje3.html"><input id="id3" type="button" class="btn btn-light btn-lg" value="模擬試験3" onclick="mogi3()"></a>
+   <a href="paje4.html"><input id="id4" type="button" class="btn btn-light btn-lg" value="模擬試験4" onclick="mogi4()"></a>
  </section>
  
 
