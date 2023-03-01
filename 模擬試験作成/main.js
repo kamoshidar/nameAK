@@ -24,6 +24,15 @@ if (ret == true){
  }
 }
 
+function goLoginPatge(){
+    passwd = document.formon1.passwd.value;
+    id = document.formon1.id1.value;
+    if(id == "1234" && passwd == "password"){
+        location.href="./mogi.html";
+    }else{
+        alert('パスワードかIDが違います。')
+    }
+}
 
 
 
